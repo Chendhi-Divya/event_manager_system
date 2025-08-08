@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard - Event Manager text-white</title>
+    <link rel="stylesheet" href="{% static 'events/css/styles.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Your Dashboard, {{ user.username }}</h1>
+        <nav>
+            <a href="/">Home</a> |
+            <a href="/logout/">Logout</a>
+        </nav>
+    </header>
+
+    <main style="padding: 20px;">
+        <h2>Your Events</h2>
+        <ul>
+            <li>Upcoming: Workshop on AI - 10 Aug</li>
+            <li>Registered: Web Design Bootcamp</li>
+            <li>Past: Python Seminar</li>
+        </ul>
+
+        <h3>Actions</h3>
+        <button>Create New Event</button>
+        <button>Manage RSVPs</button>
+        <button>Send Invitations</button>
+    </main>
+</body>
+</html>
